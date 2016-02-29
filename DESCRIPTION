@@ -1,7 +1,7 @@
 Package: LRTH
 Type: Package
 Title: A likelihood ratio test accounting for genetic heterogeneity
-Version: 1.0
+Version: 1.1
 Date: 2016-02-28
 Author: Zhiyuan (Jason) Xu and Wei Pan
 Maintainer: Zhiyuan (Jason) Xu <xuxx0284@umn.edu>
