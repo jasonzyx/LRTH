@@ -4,6 +4,17 @@
 #' @param x: a n x 1 vector of genotypic score (i.e. 0, 1 or 2)
 #' @param y: a n x 1 vector of disease status; case/xcontrol: 1/0
 #' @return The asymptotic p-value of LRTH test
+#' @details Missing values in either x or y (i.e. genotype or disease status) will be removed.
+#' @author Zhiyuan Xu and Wei Pan
+#' @references Qian M., Shao Y., 2013. A Likelihood Ratio Test for Genome-Wide Association under Genetic Heterogeneity. Annals of Human Genetics, 77(2): 174-182.
+#' @examples{
+#'        y = c(rep(1,500),rep(0,500))
+#'        x1 = sample(c(0,1,2),500,replace=TRUE,prob = c(0.64,0.32,0))
+#'        x2 = sample(c(0,1,2),500,replace=TRUE,prob = c(0.49,0.42,0))
+#'        x = c(x1,x2)
+#'        LRT_H(x,y)
+#' } 
+#'           
 #' @export
 
 
