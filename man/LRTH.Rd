@@ -2,19 +2,19 @@
 % Please edit documentation in R/LRTH.R
 \name{LRTH}
 \alias{LRTH}
-\title{The function to for the likelihood ratio test for genetic heteroneity}
+\title{The function of likelihood ratio test for genetic heteroneity}
 \usage{
 LRTH(x, y)
 }
 \arguments{
-\item{x:}{a n x 1 vector of genotypic score (i.e. 0, 1 or 2)}
+\item{x:}{a vector of length n (number of observations) for the genotypic score of a SNP; the value of gentoype score is the number of minor alleles of the SNP}
 
-\item{y:}{a n x 1 vector of disease status; case/xcontrol: 1/0}
+\item{y:}{a vector of length n for disease indicator; = 0 for controls, = 1 for cases.  
 }
 \value{
 The asymptotic p-value of LRTH test
 }
 \description{
-Take in genotypic score and disease status and return the p-value
+Take in genotypic score of a SNP , a vector of disease status and return the p-value
 }
 
