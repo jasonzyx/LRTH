@@ -1,11 +1,11 @@
 Package: LRTH
 Type: Package
-Title: A likelihood ratio test accounting for genetic heterogeneity
-Version: 1.1
+Title: A Likelihood Ratio Test Accounting For Genetic Heterogeneity
+Version: 1.2
 Date: 2016-02-28
 Author: Zhiyuan (Jason) Xu and Wei Pan
 Maintainer: Zhiyuan (Jason) Xu <xuxx0284@umn.edu>
-Description: A likelihood ratio test for genome-wide association under genetic
-    heterogeneity
+Description: R code of a likelihood ratio test for genome-wide association under genetic
+    heterogeneity.
 License: GPL-3
 RoxygenNote: 5.0.1

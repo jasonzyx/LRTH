@@ -1,9 +1,9 @@
 #' The function to for the likelihood ratio test for genetic heteroneity
 #' 
 #' Take in genotypic score and disease status and return the p-value
-#' @param x: a n x 1 vector of genotypic score (i.e. 0, 1 or 2)
-#' @param y: a n x 1 vector of disease status; case/xcontrol: 1/0
-#' @return The asymptotic p-value of LRTH test
+#' @param x a n x 1 vector of genotypic score for SNP (i.e. 0, 1 or 2, the number of minor alleles of a SNP); n is the number of observations.
+#' @param y a n x 1 vector of disease status; case/xcontrol: 1/0; ; n is the number of observations.
+#' @return The asymptotic p-value of LRT_H test
 #' @details Missing values in either x or y (i.e. genotype or disease status) will be removed.
 #' @author Zhiyuan Xu and Wei Pan
 #' @references Qian M., Shao Y., 2013. A Likelihood Ratio Test for Genome-Wide Association under Genetic Heterogeneity. Annals of Human Genetics, 77(2): 174-182.
@@ -16,6 +16,7 @@
 #' } 
 #'           
 #' @export
+#' @importFrom stats complete.cases pchisq
 
 
 LRT_H = function(x,y){

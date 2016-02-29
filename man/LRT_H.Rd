@@ -7,12 +7,12 @@
 LRT_H(x, y)
 }
 \arguments{
-\item{x:}{a n x 1 vector of genotypic score (i.e. 0, 1 or 2)}
+\item{x}{a n x 1 vector of genotypic score for SNP (i.e. 0, 1 or 2, the number of minor alleles of a SNP); n is the number of observations.}
 
-\item{y:}{a n x 1 vector of disease status; case/xcontrol: 1/0}
+\item{y}{a n x 1 vector of disease status; case/xcontrol: 1/0; ; n is the number of observations.}
 }
 \value{
-The asymptotic p-value of LRTH test
+The asymptotic p-value of LRT_H test
 }
 \description{
 Take in genotypic score and disease status and return the p-value
