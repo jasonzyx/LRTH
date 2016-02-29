@@ -7,7 +7,7 @@
 #' @export
 
 
-LRTH = function(x,y){
+LRT_H = function(x,y){
   ## implement Qian & Shao (2013) LRT test
   ## given dat including: x (genotype: 0,1,2) and y(Case/control:1/0)
   ## output p-value
